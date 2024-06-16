@@ -209,6 +209,8 @@ const connectDB = async ()=>{
 }
 connectDB().then(()=>{
   app.listen(port, ()=>{
+
+    
     console.log(`listening on port ${port}`);
   })
 });
