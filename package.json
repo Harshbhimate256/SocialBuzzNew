@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "connect-flash": "^0.1.1",
