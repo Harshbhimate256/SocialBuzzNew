@@ -255,3 +255,130 @@ body{
     font-size: 15px;
     font-weight: 500;
   }
+  @media(max-width:600px){
+    #toggle{
+      display: block;
+      height: 7vw;
+      width: 10vw;
+      margin: 5vw;    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      border: 1px solid black;
+      padding: 1vw;
+      background-color: lightblue;
+      border-radius: 5px;
+      transition: 1s all ease ;
+      box-shadow: 2px 2px 5px ;
+  }
+  #close{
+      display: none;
+  }
+  .navbar{
+      left: -100%;
+      transition: .5s all ease-in-out;
+  }
+  .navbar h1{
+    margin-top: 10vw;
+    font-size: 3.5vw;
+    text-align: center;
+    border: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+}
+.links a{
+    font-size: 3vw;
+}
+.container{
+  margin-left: 0;
+  width: 100%;
+  /* background-color: red; */
+  flex-direction: column;
+  transition: .5s all ease-in-out;
+  display: flex;
+    gap: 1vw;
+    /* background-color: gray; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0%;
+    padding: .5vw 4vw; 
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100%;
+  color: black;
+  /* background-color: red; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title-h1{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: -webkit-linear-gradient(rgb(10, 75, 255), rgb(3, 143, 225));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.updatepic{
+  min-height: 30vh;
+  background-color: transparent;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  position: relative;
+  border-radius: 25px;
+  gap: 25vw;
+  overflow: hidden;
+}
+.bg{
+  height: 20%;
+}
+.profilecircle{
+  height: 22vw;
+  width: 22vw;
+  top: 4vw;
+  left: 4vw;
+}
+.profilelower{
+  margin-top: 5vw;
+  margin-left: 2vw;
+}
+.profilelower h1{
+  font-size: 6vw;
+}
+.profilelower p{
+  font-size:3.5vw;
+}
+.profilelower label{
+  padding: 10px; 
+  border-radius: 10px;
+}
+.savebtn{
+  padding: 10px;
+  font-size: 4vw;
+}
+.updateinfo{
+  padding: 4vw 4vw;
+}
+.right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.bio{
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+  gap: 10px;
+  min-height: 22.5vh;
+  padding: 4vw 4vw;
+}
+  }

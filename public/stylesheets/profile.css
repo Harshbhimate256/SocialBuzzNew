@@ -414,3 +414,122 @@
       font-size: .8em;
     }
   }
+  @media(max-width:600px){
+    #toggle{
+      display: block;
+      height: 7vw;
+      width: 10vw;
+      margin: 5vw;    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      border: 1px solid black;
+      padding: 1vw;
+      background-color: lightblue;
+      border-radius: 5px;
+      transition: 1s all ease ;
+      box-shadow: 2px 2px 5px ;
+  }
+  #close{
+      display: none;
+  }
+  .container{
+    transition: .5s all ease-in-out;
+  }
+  .navbar{
+      left: -100%;
+      height: 100%;
+      transition: .5s all ease-in-out;
+  }
+  .navbar h1{
+    margin-top: 10vw;
+    font-size: 3vw;
+    text-align: center;
+    border: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+}
+.links a{
+    font-size: 3vw;
+}
+.user-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-header-inner {
+  width: 100%;
+  min-height: 10vh;
+  display: grid;
+  align-items: left;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+.uh-left {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 0;
+  /* background-color: rgba(0, 255, 174, 0.453); */
+  align-items: start;
+}
+.uh-image {
+  width: 7rem;
+  height: 7rem;
+}
+
+.uh-image-inner {
+  width: 7rem;
+  height: 7rem;
+}
+.uh-right {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user-info {
+  font-size: 1.3em;
+  line-height: 0;
+  color: black;
+  justify-content: center;
+  align-items: center;    
+}
+.user-info h1{
+  font-size: 8vw;
+}
+.uname-verified {
+  height: 1.8rem;
+}
+.user-bio-name{
+  font-size: 4vw;
+}
+.user-page-inner {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-right: 2vw;
+}
+.icon-container svg{
+  height: 20px;
+  width: 20px;
+}
+.hover-icons{
+  position: absolute;
+  opacity: 0;
+  gap: 15px;
+}
+.icon-container p{
+  font-size: 2.5vw;
+}
+}

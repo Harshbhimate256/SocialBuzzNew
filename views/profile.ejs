@@ -9,7 +9,16 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <button id='toggle'>
+    <svg id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+    </svg>
+    <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+        </path>
+    </svg>
+</button>
+  <div id="nav" class="navbar">
     <h1>
       SocialBuzz
     </h1>
@@ -40,7 +49,7 @@
       </a>
     </div>
   </div>
-  <div class="container">
+  <div id="main" class="container">
     <div class="user-header-wrapper">
       <div class="user-header-inner">
         <div class="uh-left">
@@ -124,7 +133,7 @@
       </div>
     </div>
   </div>
-
+  <script src="/javascripts/profile.js"></script>
 </body>
 
 </html>

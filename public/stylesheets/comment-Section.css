@@ -115,3 +115,97 @@ body {
 .delete-icon:hover{
     background-color: #dadef6;
 }
+@media(max-width:600px){
+    #toggle{
+        display: block;
+        height: 7vw;
+        width: 10vw;
+        margin: 5vw;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        border: 1px solid black;
+        padding: 1vw;
+        background-color: lightblue;
+        border-radius: 5px;
+        transition: 1s all ease ;
+        box-shadow: 2px 2px 5px ;
+    }
+    #close{
+        display: none;
+    }
+    .navbar{
+        left: -100%;
+        transition: .5s all ease-in-out;
+    }
+    .navbar h1{
+        margin-top: 10vw;
+        font-size: 3vw;
+        text-align: center;
+        border: none;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+    }
+    .links a{
+        font-size: 3vw;
+    }
+    .container{
+        width: 80%;
+    }
+    .main{
+        margin-left: 0%;
+        width: 100%;
+        /* background-color: rgb(51, 51, 51); */
+        transition: .5s all ease-in-out;
+    }
+    .main h1{
+        font-size: 7vw;
+    }
+    .comments-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        /* background-color: rgba(0, 0, 0, 0.218); */
+    }
+    .comments{
+        gap: 10px;
+        padding: 5px 10px;
+        align-items: center;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.119);
+        border-radius: 10px;
+    }
+    .profile-img{
+        height: 8vw;
+        width:9vw;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .profile-img img{
+        object-fit: cover;
+        background-color: lightblue;
+    }
+    .comment-content{
+        gap: 5px;
+    }
+    .comment-content h2{
+        font-size: 4vw;
+    }
+    .comment-content p{
+        font-size: 3vw;
+    }
+    .delete-icon{
+        color: black;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .delete-btn{
+        height: 15px;
+        width: 15px;
+    }    
+}

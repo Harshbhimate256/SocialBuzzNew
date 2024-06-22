@@ -191,3 +191,63 @@ input[type="file"]{
   opacity: 0.8;
 }
 .file-set > input{pointer-events: none;}
+
+@media(max-width:600px){
+  .navbar{
+
+    padding: 2vw 10vw;
+    background-color: white;
+    align-items: center;
+    color: black;
+  }
+  .navbar h1{
+    font-size: 5vw;
+  }
+  .navbar svg{
+  color: black;
+  }
+  .links{
+    gap: 15vw;
+    font-size: 1.1vw;
+  }
+  .links-icon{
+    height: 20px;
+    width: 20px;
+  }
+  .links a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+  }
+  .navbtn{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+  }
+  .container{
+    min-height: 40vh;
+    width: 90%;
+}
+  .file-wrapper{
+    width: 300px;
+    height: 200px;
+  }
+  .content{
+    margin-top: 3vw;
+    gap: 30px;
+    width: 80%;
+}
+.content input{
+    width: 60vw;
+    height: 4vh;
+    font-size: 2.5vw;
+    border-radius: 5px;
+}
+.content input::placeholder{
+    font-size: 2.5vw;
+}
+.content button{
+    width: 15vw;
+    font-size: 3vw;
+}
+}
